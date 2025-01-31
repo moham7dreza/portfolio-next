@@ -1,14 +1,7 @@
 "use client";
 
 import {Typography} from "@material-tailwind/react";
-import {
-    DocumentTextIcon,
-    EyeIcon,
-    FingerPrintIcon,
-    HashtagIcon,
-    RectangleGroupIcon,
-    SwatchIcon,
-} from "@heroicons/react/24/solid";
+import {EyeIcon, RectangleGroupIcon,} from "@heroicons/react/24/solid";
 import {SkillCard} from "@/components";
 
 const SKILLS = [
@@ -30,15 +23,21 @@ export function Skills() {
     return (
         <section className="px-8">
             <div className="container mx-auto mb-20 text-center">
-                <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined} color="blue-gray" className="mb-2 font-bold uppercase">
                     my skills
                 </Typography>
-                <Typography variant="h1" color="blue-gray" className="mb-4">
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined} variant="h1" color="blue-gray" className="mb-4">
                     What I do
                 </Typography>
-                <Typography
-                    variant="lead"
-                    className="mx-auto w-full !text-gray-500 lg:w-10/12"
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                            variant="lead"
+                            className="mx-auto w-full !text-gray-500 lg:w-10/12"
                 >
                     I&apos;m not just a developer; I&apos;m a digital dreamweaver.
                     Crafting immersive online experiences is not just a job but my

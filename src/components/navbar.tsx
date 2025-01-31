@@ -3,11 +3,9 @@ import {Collapse, IconButton, Navbar as MTNavbar, Typography,} from "@material-t
 import {
     Bars3Icon,
     ChatBubbleBottomCenterIcon,
-    CommandLineIcon,
-    UserCircleIcon,
-    XMarkIcon,
-    PaperAirplaneIcon,
     CodeBracketIcon,
+    PaperAirplaneIcon,
+    XMarkIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
@@ -36,13 +34,15 @@ interface NavItemProps {
 function NavItem({children, href}: NavItemProps) {
     return (
         <li>
-            <Typography
-                as="a"
-                href={href || "#"}
-                target={href ? "_blank" : "_self"}
-                variant="paragraph"
-                color="gray"
-                className="flex items-center gap-2 font-medium text-gray-900"
+            <Typography placeholder={undefined}
+                        onPointerEnterCapture={undefined}
+                        onPointerLeaveCapture={undefined}
+                        as="a"
+                        href={href || "#"}
+                        target={href ? "_blank" : "_self"}
+                        variant="paragraph"
+                        color="gray"
+                        className="flex items-center gap-2 font-medium text-gray-900"
             >
                 {children}
             </Typography>
@@ -63,9 +63,13 @@ export function Navbar() {
     }, []);
 
     return (
-        <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+        <MTNavbar placeholder={undefined}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined} shadow={false} fullWidth className="border-0 sticky top-0 z-50">
             <div className="container mx-auto flex items-center justify-between">
-                <Typography color="blue-gray" className="text-lg font-bold">
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined} color="blue-gray" className="text-lg font-bold">
                     Mohamadreza Rezaei
                 </Typography>
                 <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -82,11 +86,13 @@ export function Navbar() {
                 {/*    <Button color="gray">blocks</Button>*/}
                 {/*  </a>*/}
                 {/*</div>*/}
-                <IconButton
-                    variant="text"
-                    color="gray"
-                    onClick={handleOpen}
-                    className="ml-auto inline-block lg:hidden"
+                <IconButton placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                            variant="text"
+                            color="gray"
+                            onClick={handleOpen}
+                            className="ml-auto inline-block lg:hidden"
                 >
                     {open ? (
                         <XMarkIcon strokeWidth={2} className="h-6 w-6"/>

@@ -14,11 +14,13 @@ const PROJECTS = [
         img: "/image/blog2.svg",
         title: "Toprate",
         desc: "find the best of everything (in developing)",
+        href: "#"
     },
     {
         img: "/image/blog2.svg",
         title: "Shop Builder",
         desc: "multi-vendor e-commerce (in developing)",
+        href: "#"
     },
     {
         img: "/image/blog3.svg",
@@ -32,12 +34,16 @@ export function Projects() {
     return (
         <section className="py-28 px-8">
             <div className="container mx-auto mb-20 text-center">
-                <Typography variant="h2" color="blue-gray" className="mb-4">
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined} variant="h2" color="blue-gray" className="mb-4">
                     My Projects
                 </Typography>
-                <Typography
-                    variant="lead"
-                    className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
+                <Typography placeholder={undefined}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                            variant="lead"
+                            className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
                 >
                     Whether you have a mobile app idea that needs to come to life or a
                     website that requires a facelift, I&apos;m here to turn your digital

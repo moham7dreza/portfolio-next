@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
             },
         ],
     },
+    basePath: "/portfolio-next",
+    output: 'export'
 };
 
 export default nextConfig;
